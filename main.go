@@ -24,7 +24,7 @@ func TestContainer(t *testing.T) {
 	testcontainers.CleanupContainer(t, redisContainer)
 	assert.Nil(t, err)
 
-	endPoint, err := redisContainer.Endpoint(context.TODO(), "yowzaa")
+	endPoint, err := redisContainer.Endpoint(context.TODO(), "yowzfddffddfdfaa")
 	assert.Nil(t, err)
 
 	client := redis.NewClient(
